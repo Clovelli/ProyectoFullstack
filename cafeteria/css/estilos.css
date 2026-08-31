@@ -26,8 +26,12 @@
 }
 
 .feature-cards__title{
-
+    /* centrar elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+    /* dimensiones y estilo visual */
     margin-top: 30px; 
     margin-bottom: 30px;
 }
@@ -51,14 +55,19 @@
     align-items: center;
 
     /* dimensiones y estilo visual */
-    width: 33.3%; 
-    height: 100%; 
-    gap: 40px;
+    width: 100/3%; 
+    height: 100%;
     background-color: rgb(168, 168, 168); 
     
 }
 
 .feature-card__icon{
-    width: 100px;
-    transform: translateY(-50px);
+    width: 20%;
+    /* transform: translateY(-30%); */
+}
+
+.feature-card__text{
+    text-align: center; 
+    /* margin-left: 15%; 
+    margin-right: 15%; */
 }
