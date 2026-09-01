@@ -1,4 +1,4 @@
-.navbar-div{
+c.navbar-div{
     position: sticky;
     top: 0;
     width: 100%;
@@ -41,33 +41,42 @@
     overflow: hidden;
 
     /* dimensiones y estilo visual */
-    height: 500px;
+    height: 400px;
     width: 100%;
     background-color: rgb(255, 255, 255);
 }
 
 .feature-card{
-    display: flex;
-    flex-direction: column;
-
-    /* centrar elementos */
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 
     /* dimensiones y estilo visual */
-    width: 100/3%; 
+    width: calc(100%/3); 
     height: 100%;
-    background-color: rgb(168, 168, 168); 
-    
+    /* background-color: rgb(168, 168, 168);  */
 }
 
 .feature-card__icon{
-    width: 20%;
-    /* transform: translateY(-30%); */
+    /* centrar icono */
+    justify-self: center;
+    align-self: center;
 }
 
+.feature-card__icon-left-size{
+    width: 85px;
+}
+.feature-card__icon-center-size{
+    width: 100px;
+}
+.feature-card__icon-right-size{
+    width: 120px;
+}
+
+
 .feature-card__text{
-    text-align: center; 
-    /* margin-left: 15%; 
-    margin-right: 15%; */
+    /* dimensiones y estilo visual */
+    text-align: justify;
+    margin-top: -20px;
+    margin-left: 15%; 
+    margin-right: 15%;
 }
