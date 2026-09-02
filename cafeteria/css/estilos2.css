@@ -17,3 +17,16 @@
   font-weight: 700;
   font-style: normal;
 }
+
+footer {
+    background-color: #8a8074;
+    color: #fff;
+    padding: 3rem 0;
+
+    bottom: 0;
+    height: 100%;
+  }
+
+  .social-icons a {
+    font-size: 1.25rem;
+  }
