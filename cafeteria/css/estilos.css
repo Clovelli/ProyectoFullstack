@@ -13,10 +13,10 @@
 }
 
 .menu-img-container{
+    position: relative;
     height: 60vh;
     width: 100%;
     overflow: hidden;
-    background-image: url(/cafeteria/assets/img/cafe-inicio.png);
 }
 
 .menu-img{
@@ -24,6 +24,34 @@
     height: 100%;
     object-fit: cover;
     object-position: center 70%;
+}
+
+.menu-img__overlay-text{
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+
+    /* dimensiones y estilo visual */
+    font-size: 7vh;
+    color: rgb(255, 255, 255);
+}
+
+.menu-img__overlay-text--position-top-text{
+    /* posicion del texto */
+    bottom: 8vh;
+    left: 5vh;
+    font-weight: bold;
+}
+
+.menu-img__overlay-text--position-bottom-text{
+    /* posicion del texto */
+    bottom: 5vh;
+    left: 5.5vh;
+}
+
+.menu-img__overlay-text--smaller{
+    font-size: 3vh;
 }
 
 /* spacer */
