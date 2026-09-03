@@ -7,16 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
 
+    <!-- Css -->
+
+    <link rel="stylesheet" href="css/estilos2.css">
+
     <!-- Boostrap -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    
-    <!-- texto -->
+
+    <!-- Texto -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -25,7 +29,7 @@
     <style>
         body{
 
-            background: color(rgb(53, 36, 36));
+            background: color(rgb(246, 245, 245));
             margin: 0;
             height: 100vh;
         }
@@ -33,43 +37,41 @@
     
     <!-- navbar -->
 
-<nav class="navbar navbar-dark bg-dark custom-navbar">
-  <div class="container-fluid position-relative d-flex align-items-center">
-    
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-dark bg-dark custom-navbar">
+      
+      <div class="container-fluid position-relative d-flex align-items-center">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <a class="navbar-brand position-absolute start-50 translate-middle-x m-0" href="#">
-      <img src="assets/img/cat&cup.png" alt="Logo" class="navbar-logo">
-    </a>
+        <a class="navbar-brand position-absolute start-50 translate-middle-x m-0" href="#">
+          <img src="assets/img/cat&cup.png" alt="Logo" class="navbar-logo">
+        </a>
+      </div>
 
-  </div>
-</nav>
+    </nav>
 
-  <!-- Menú Offcanvas (Negro, con scroll activo y sin capa superpuesta) -->
-  <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  
+    <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+        <div class="offcanvas-body">
+          
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link activefuzzy-bubbles-regular" href="#">Inicio</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Preparaciones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Preguntas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+
+        </ul>
+      </div>
     </div>
-    <div class="offcanvas-body">
-      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-
-        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Preparaciones</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Preguntas</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-
-      </ul>
-    </div>
-  </div>
-
-    <h2>Contactanos</h2>
-    <p>¿Tienes alguna duda o quieres preguntar si hay mesas? Completa el siguiente formulario.</p>
     
     <!-- Form -->
 
@@ -79,7 +81,9 @@
             <div class="col-lg-6 col-md-8 col-sm-12">
                 <div class="card shadow-lg">
                     <div class="card-body">
-                        <h3 class="card-title text-center mb-4">Contact Us</h3>
+                        <h3 class="card-title text-center mb-4 fuzzy-bubbles-bold">Contact Us</h3>
+                        <p class="card-title text-center mb-4" class="fuzzy-bubbles-bold">¿Tienes alguna duda o quieres preguntar si hay mesas? Completa el siguiente formulario.</p>
+
                         <form>
                             <div class="mb-3">
                                 <label for="name" class="form-label">Name</label>

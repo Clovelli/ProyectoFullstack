@@ -19,7 +19,7 @@
 }
 
 footer {
-    background-color: #8eaf89;
+    background-color: #af9580;
     color: #fff;
     padding: 3rem 0;
 
@@ -53,7 +53,7 @@ footer {
             margin-bottom: 1.5rem;
         }
         .btn-primary {
-            background-color: #ff6f61;
+            background-color: #1d0f03;
             border-color: #ff6f61;
         }
         .btn-primary:hover {
