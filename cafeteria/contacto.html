@@ -33,14 +33,19 @@
     
     <!-- navbar -->
 
-    <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand ms-3" href="#"> <img src="assets/img/cat&cup.png" alt="" height="64px"></a>
-    </div>
-  </nav>
+<nav class="navbar navbar-dark bg-dark custom-navbar">
+  <div class="container-fluid position-relative d-flex align-items-center">
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand position-absolute start-50 translate-middle-x m-0" href="#">
+      <img src="assets/img/cat&cup.png" alt="Logo" class="navbar-logo">
+    </a>
+
+  </div>
+</nav>
 
   <!-- Menú Offcanvas (Negro, con scroll activo y sin capa superpuesta) -->
   <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -69,33 +74,51 @@
     <!-- Form -->
 
  
-    <form>
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8 col-sm-12">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4">Contact Us</h3>
+                        <form>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="name" 
+                                    placeholder="Enter your name" 
+                                    required 
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input 
+                                    type="email" 
+                                    class="form-control" 
+                                    id="email" 
+                                    placeholder="Enter your email" 
+                                    required 
+                                />
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea 
+                                    class="form-control" 
+                                    id="message" 
+                                    rows="4" 
+                                    placeholder="Write your message here"
+                                    required
+                                ></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-            </div>
         </div>
-        
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-
-        <!-- <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div> -->
-
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
     </div>
 
 </body>

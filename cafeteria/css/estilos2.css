@@ -19,7 +19,7 @@
 }
 
 footer {
-    background-color: #8a8074;
+    background-color: #8eaf89;
     color: #fff;
     padding: 3rem 0;
 
@@ -30,3 +30,33 @@ footer {
   .social-icons a {
     font-size: 1.25rem;
   }
+
+  /* Tamaño predeterminado (fijo) del Navbar */
+.custom-navbar {
+  height: 100px; /* Ajusta la altura deseada del navbar */
+  padding: 0 1rem;
+}
+
+/* Tamaño personalizado para el Logo */
+.navbar-logo {
+  height: 80px; /* Ajusta el alto del logo para que quepa bien */
+  width: auto;  /* Mantiene la proporción de la imagen */
+}
+
+        .card {
+            border-radius: 10px;
+        }
+        .card-body {
+            padding: 2rem;
+        }
+        .card-title {
+            margin-bottom: 1.5rem;
+        }
+        .btn-primary {
+            background-color: #ff6f61;
+            border-color: #ff6f61;
+        }
+        .btn-primary:hover {
+            background-color: #e85c50;
+            border-color: #e85c50;
+        }
