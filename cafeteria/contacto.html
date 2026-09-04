@@ -28,61 +28,69 @@
 
     <style>
         body{
-
-            background: color(rgb(246, 245, 245));
+            background-color: #fdfdfd;
             margin: 0;
-            height: 100vh;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column
         }
     </style>
     
-    <!-- navbar -->
+    <!-- Navbar -->
 
     <nav class="navbar navbar-dark bg-dark custom-navbar">
-      
       <div class="container-fluid position-relative d-flex align-items-center">
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <a class="navbar-brand position-absolute start-50 translate-middle-x m-0" href="#">
+        <a class="navbar-brand position-absolute start-50 translate-middle-x m-0">
           <img src="assets/img/cat&cup.png" alt="Logo" class="navbar-logo">
         </a>
       </div>
-
     </nav>
 
-  
     <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+      <div class="offcanvas-header pb-0">
+        <h4 class="offcanvas-title fuzzy-bubbles-bold text-center w-100 mb-0" id="offcanvasNavbarLabel" style="font-size: 30px;">— <strong>Cat & Cup</strong> —</h4>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-        <div class="offcanvas-body">
-          
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item"><a class="nav-link activefuzzy-bubbles-regular" href="#">Inicio</a></li>
-
-          <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Preparaciones</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Preguntas</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Nosotros</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
-
-        </ul>
-      </div>
     </div>
+
+    <div class="offcanvas-body">
+      <hr style="border: none; height: 3px; background-color:white; width: 100%; margin-top: 0;">
+
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="margin-bottom: 140px;">
+            <p class="fuzzy-bubbles-bold" style="font-size: 18px;">
+              <strong>
+                Menu
+              </strong>
+            </p>
+            <li class="nav-item"><a class="nav-link fuzzy-bubbles-regular" href="index.html"> ⭑ <u> Inicio</u></a></li>
+            <li class="nav-item"><a class="nav-link fuzzy-bubbles-regular" href="productos.html"> ⭑ <u>Productos</u></a></li>
+            <li class="nav-item"><a class="nav-link fuzzy-bubbles-regular" href="preparaciones.html"> ⭑ <u>Preparaciones</u></a></li>
+            <li class="nav-item"><a class="nav-link fuzzy-bubbles-regular" href="preguntas.html"> ⭑ <u>Preguntas</u></a></li>
+            <li class="nav-item"><a class="nav-link fuzzy-bubbles-regular" href="nosotros.html"> ⭑ <u>Nosotros</u></a></li>
+            <li class="nav-item"><a class="nav-link fuzzy-bubbles-regular" href="contacto.html"> ⭑ <u>Contacto</u></a></li>
+          </ul>
+
+          <div class="mt-auto text-center">
+            <p class="fuzzy-bubbles-regular mb-0" style="opacity: 0.5; font-size: 12px;">&copy; 2026 | Cat & Cup</p>
+          </div>
+
+        </div>
+      </div>
+
+    <!-- NUNCAMAS ME COMPROMETO A HACER EL NAVBAR -->
     
     <!-- Form -->
 
  
-    <div class="container mt-5">
+    <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-lg-6 col-md-8 col-sm-12">
                 <div class="card shadow-lg">
                     <div class="card-body">
-                        <h3 class="card-title text-center mb-4 fuzzy-bubbles-bold">Contact Us</h3>
-                        <p class="card-title text-center mb-4" class="fuzzy-bubbles-bold">¿Tienes alguna duda o quieres preguntar si hay mesas? Completa el siguiente formulario.</p>
+                        <h3 class="card-title text-center mb-4 fuzzy-bubbles-bold">Contactanos</h3>
+                        <p class="card-title text-center mb-4 fuzzy-bubbles-regular">¿Tienes alguna duda o quieres preguntar si hay mesas? Completa el siguiente formulario.</p>
 
                         <form>
                             <div class="mb-3">
@@ -125,41 +133,41 @@
         </div>
     </div>
 
-</body>
+  
+  <footer>
+    <div class="container">
+      <div class="row">
 
-<link rel="stylesheet" href="css/estilos2.css">
-<footer class="mt-auto">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 mb-3">
-        <h5><strong>Sobre Nosotros</strong></h5>
-        <a href="nosotros.html" class="text-decoration-none text-white">Nosotros</a></li>
+        <div class="col-md-4 mb-3 fuzzy-bubbles-bold">
+          <h5 class="text-center"><strong>NO TE QUEDES SIN TU CAFE</strong></h5>
+          <p class="text-center">──── ☕︎ ────</p>
+
+        </div>
+
+        <div class="col-md-4 mb-3 fuzzy-bubbles-regular">
+          <h5><strong>SOBRE NOSOTROS</strong></h5>
+          <p>Somos apasionados del cafe de especialidad. Nacimos con la mis...</p>
+          <a href="nosotros.html" class="text-decoration-none text-white">⭑ <u>Saber mas</u></a></li>
+          
+        </div>
+
+        <div class="col-md-4 mb-3 fuzzy-bubbles-regular">
+            <h5><strong>INFORMACION DE UTILIDAD</strong></h5>
+              <p>UBICACION <br>>Av. Principal #123, Comuna</p>
+              <p>HORARIO DE ATENCION <br>⭑ Lunes a Viernes | 7:30 a 20:00 <br>⭑ Sabado y domingo | 9:30 a 20:00</p>
+          </ul>        
+        </div>
+
       </div>
-      <div class="col-md-4 mb-3">
-        <h5>Quick Links</h5>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-decoration-none text-white">Home</a></li>
-          <li><a href="#" class="text-decoration-none text-white">Services</a></li>
-          <li><a href="#" class="text-decoration-none text-white">Contact</a></li>
-        </ul>
-      </div>
-      <div class="col-md-4 mb-3">
-        <h5>Follow Us</h5>
-        <ul class="list-inline social-icons">
-          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
-          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-twitter"></i></a></li>
-          <li class="list-inline-item"><a href="#" class="text-white"><i class="bi bi-instagram"></i></a></li>
-        </ul>
-      </div>
-    </div>
-    <hr class="mb-4">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <p>&copy; 2026 Cafeteria Michi Cafe - Todos los derechos reservados.</p>
-        <p>Dirección: Av. Principal #123, Comuna | Teléfono: +56 9 0000 0000</p></p>
+      <hr class="mb-4">
+      <div class="row">
+        <div class="col-md-12 text-center fuzzy-bubbles-regular">
+          <p>&copy; 2026 Cat & Cup - Todos los derechos reservados.</p>
+        </div>
       </div>
     </div>
-  </div>
-</footer>
+   </footer>
+
+</body>
 
 </html>

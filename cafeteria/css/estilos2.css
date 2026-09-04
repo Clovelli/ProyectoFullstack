@@ -1,11 +1,3 @@
-.cuadrado {
-
-    width: 150px;  
-    height: 150px; 
-    background-color: rgb(255, 255, 255); 
-
-}
-
 .fuzzy-bubbles-regular {
   font-family: "Fuzzy Bubbles", sans-serif;
   font-weight: 400;
@@ -19,28 +11,23 @@
 }
 
 footer {
-    background-color: #af9580;
-    color: #fff;
-    padding: 3rem 0;
+  background-color: #998a7e;
+  color: #fff;
+  padding: 3rem;
+  padding-bottom: 3rem;
 
-    bottom: 0;
-    height: 100%;
-  }
-
-  .social-icons a {
-    font-size: 1.25rem;
-  }
-
-  /* Tamaño predeterminado (fijo) del Navbar */
-.custom-navbar {
-  height: 100px; /* Ajusta la altura deseada del navbar */
-  padding: 0 1rem;
+  bottom: 0;
+  height: 100%;
 }
 
-/* Tamaño personalizado para el Logo */
+.custom-navbar {
+  height: 70px;
+  padding: 1rem;
+}
+
 .navbar-logo {
-  height: 80px; /* Ajusta el alto del logo para que quepa bien */
-  width: auto;  /* Mantiene la proporción de la imagen */
+  height: 50px; 
+  width: auto;
 }
 
         .card {
@@ -60,3 +47,4 @@ footer {
             background-color: #e85c50;
             border-color: #e85c50;
         }
+
