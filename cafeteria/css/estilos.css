@@ -1,3 +1,6 @@
+/* INDEX */
+/* ##### */
+
 .div-visible{
     background-color: rgb(0, 0, 0);
     height: 30vh;
@@ -134,4 +137,44 @@
     margin-top: -10px;
     margin-left: 15%; 
     margin-right: 15%;
+}
+
+/* Nosotros */
+/* ######## */
+
+.background__img-container{
+    display: flex;
+
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.background__img{
+    width: 400px; 
+    height: 400px;
+}
+
+.info-card-container{
+    width: auto;
+    height: auto;
+    border-radius: 1%;
+
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-right: 15%;
+    
+    padding: 5%;
+
+    background-color: rgb(33, 37, 41);
+}
+
+.info-card__title{
+    text-align: center;
+    color: white;
+}
+
+.info-card__text{
+    text-align: justify;
+    font-size: 18px;
+    color: white;
 }
