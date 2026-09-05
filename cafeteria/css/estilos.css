@@ -215,3 +215,50 @@ p{
     margin-left: 5%;
     margin-right: 5%;
 }
+
+/* Productos */
+/* ######### */
+
+.search-bar-container{
+    width: 100%;
+    height: 10vh;
+    
+    margin-top: 10vh;
+
+    padding: 1% 15%;
+    
+    background-color: rgb(221, 221, 221);
+}
+
+.search-bar{
+    width: 100%;
+    height: 100%;
+
+    padding: 0 20px;
+
+    border-radius: 999px;
+    border: none;
+
+    background-color: rgb(255, 255, 255);
+}
+
+.search-bar-border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    height: 100%;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.search-bar__icon{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 15px;
+}
+
+
