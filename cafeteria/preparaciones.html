@@ -26,41 +26,85 @@
 
 <body>
 
-    <!-- navbar -->
+    <style>
+        body{
+            background: color(rgb(253, 253, 253));
+            margin: 0;
+            height: 100vh;
+        }
+    </style>
 
-    <div  class="navbar-div" style="color: black;">
-        <nav class="navbar navbar-expand-lg" style="height: 100%; width: 100%; color: black;">
-        <div class="container-fluid" style="color: black">
-            <a class="navbar-brand" href="index.html"><img src="assets/img/gatitologo.png" alt="" height="64px" width="64px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="menu.html">Menú</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="galeria.html">Galería</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="preparaciones.html">Preparaciones</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="contacto.html">Contáctanos</a>
-                </li>
-            </ul>
-            </div>
-        </div>
-        </nav>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-dark bg-dark custom-navbar">
+      <div class="container-fluid position-relative d-flex align-items-center">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand position-absolute start-50 translate-middle-x m-0">
+          <img src="assets/img/cat&cup.png" alt="Logo" class="navbar-logo">
+        </a>
+      </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start text-bg-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header pb-0">
+        <h4 class="offcanvas-title fuzzy-bubbles-bold text-center w-100 mb-0" id="offcanvasNavbarLabel" style="font-size: 30px;">— <strong>Cat & Cup</strong> —</h4>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
 
-    <h2 class="fuzzy-bubbles-regular">Preparaciones</h2>
-    <p>¿Quieres preparar nuestras recetas mas famosas?</p>
-    <p>Aqui tienes paso a paso de como prepararlas</p>
+    <div class="offcanvas-body">
+      <hr style="border: none; height: 3px; background-color:white; width: 100%; margin-top: 0;">
+
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3" style="margin-bottom: 140px;">
+            <p class="fuzzy-bubbles-bold" style="font-size: 18px;">
+              <strong>
+                Menu
+              </strong>
+            </p>
+            <li class="nav-item"><a class="nav-link fuzzy-bubbles-regular" href="index.html"> ⭑ <u> Inicio</u></a></li>
+            <li class="nav-item"><a class="nav-link fuzzy-bubbles-regular" href="productos.html"> ⭑ <u>Productos</u></a></li>
+            <li class="nav-item"><a class="nav-link fuzzy-bubbles-regular" href="preparaciones.html"> ⭑ <u>Preparaciones</u></a></li>
+            <li class="nav-item"><a class="nav-link fuzzy-bubbles-regular" href="preguntas.html"> ⭑ <u>Preguntas</u></a></li>
+            <li class="nav-item"><a class="nav-link fuzzy-bubbles-regular" href="nosotros.html"> ⭑ <u>Nosotros</u></a></li>
+            <li class="nav-item"><a class="nav-link fuzzy-bubbles-regular" href="contacto.html"> ⭑ <u>Contacto</u></a></li>
+          </ul>
+
+          <div class="mt-auto text-center">
+            <p class="fuzzy-bubbles-regular mb-0" style="opacity: 0.5; font-size: 12px;">&copy; 2026 | Cat & Cup</p>
+          </div>
+
+        </div>
+    </div>
+
+    <!--  Recetas -->
+    <div class="blog-header py-5">
+        <h1 class="fuzzy-bubbles-regular">Preparaciones</h2>
+            <p>¿Quieres preparar algunas recetas con nuestro cafe?.</p>
+            <p>Aqui tienes paso a paso de como prepararlas</p>
+    </div>
+
+    <!-- Receta destacada -->
+<div class="container mb-5">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="featured-post">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="assets/img/cafe1.JPG" alt="">
+          </div>
+          <div class="col-md-6">
+            <h2>Receta destacada</h2>
+            <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
     <!-- Grid -->
 
@@ -70,12 +114,12 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
+                        <img src="assets/img/cafe2.JPG" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
                             <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                             <button type="button" class="btn btn-primary">Primary</button>
 
@@ -89,12 +133,12 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
+                        <img src="assets/img/cafe3.JPG" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
                             <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                             <button type="button" class="btn btn-primary">Primary</button>
 
@@ -108,12 +152,12 @@
                 <div class="card mb-3" style="max-width: 540px;">
                     <div class="row g-0">
                         <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
+                        <img src="assets/img/cafe4.JPG" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
                             <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                             <button type="button" class="btn btn-primary">Primary</button>
                         </div>
@@ -125,13 +169,41 @@
         </div>
     </div>
     
+    <footer>
+        <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 mb-3 fuzzy-bubbles-bold">
+            <h5 class="text-center"><strong>NO TE QUEDES SIN TU CAFE</strong></h5>
+            <p class="text-center">──── ☕︎ ────</p>
+
+            </div>
+
+            <div class="col-md-4 mb-3 fuzzy-bubbles-regular">
+            <h5><strong>SOBRE NOSOTROS</strong></h5>
+            <p>Somos apasionados del cafe de especialidad. Nacimos con la mis...</p>
+            <a href="nosotros.html" class="text-decoration-none text-white">⭑ <u>Saber mas</u></a></li>
+            
+            </div>
+
+            <div class="col-md-4 mb-3 fuzzy-bubbles-regular">
+                <h5><strong>INFORMACION DE UTILIDAD</strong></h5>
+                <p>UBICACION <br>>Av. Principal #123, Comuna</p>
+                <p>HORARIO DE ATENCION <br>⭑ Lunes a Viernes | 7:30 a 20:00 <br>⭑ Sabado y domingo | 9:30 a 20:00</p>
+            </ul>        
+            </div>
+
+        </div>
+        <hr class="mb-4">
+        <div class="row">
+            <div class="col-md-12 text-center fuzzy-bubbles-regular">
+            <p>&copy; 2026 Cat & Cup - Todos los derechos reservados.</p>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+
 </body>
-
-<footer>
-
-    <p>&copy; 2026 Cafeteria Michi Cafe - Todos los derechos reservados.</p>
-    <p>Dirección: Av. Principal #123, Comuna | Teléfono: +56 9 0000 0000</p>
-
-</footer>
 
 </html>
