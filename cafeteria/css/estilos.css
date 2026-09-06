@@ -325,13 +325,15 @@ p{
 }
 
 .sell-card__button{
-    border: 2px solid rgba(57, 38, 2, 0.234);
-    border-radius: 5px;
-    background-color: rgba(0, 0, 58, 0.026);
+    border: 2px solid rgb(196, 133, 106);
+    border-radius: 2px;
+    background-color: rgba(254, 238, 231, 0.481);
+    width: 90%;
+    color: rgb(93, 59, 4);
 }
 
 .modal-background{
-    position: absolute;
+    display: none;
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -339,13 +341,12 @@ p{
     background-color: rgba(0, 0, 0, 0.382);
     z-index: 1000;
 
-    visibility: hidden;
 }
 
 .modal-overlay-container{
     z-index: 1001;
     position: fixed;
-    display: flex;
+    display: none;
     flex-direction: column;
 
     justify-content: center;
@@ -357,11 +358,10 @@ p{
     margin: auto;
     padding: 3vh;
 
-    border-radius: 25px;
+    border-radius: 10px;
 
     background-color: white;
 
-    visibility: hidden; 
 }
 
 .modal-overlay__close-icon{
