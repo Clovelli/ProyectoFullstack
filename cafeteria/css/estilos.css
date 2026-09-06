@@ -55,6 +55,13 @@ p{
     width: 100%; 
     bottom: 5%; 
     justify-content: center;
+    
+    transition: ease-in-out 0.5s;
+}
+
+.menu-overlay__down-arrow:hover{
+    transform: translateY(10px);
+    transition: ease-in-out 0.5s;
 }
 
 /* spacer */
