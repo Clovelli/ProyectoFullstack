@@ -7,12 +7,6 @@ p{
 /* INDEX */
 /* ##### */
 
-.div-visible{
-    background-color: rgb(0, 0, 0);
-    height: 30vh;
-    width: 100%;
-}
-
 /* inicio */
 
 .menu-img-container{
@@ -107,6 +101,9 @@ p{
     /* dimensiones y estilo visual */
     height: 400px;
     width: 100%;
+
+    margin-bottom: 10vh;
+
     background-color: rgb(255, 255, 255);
 }
 
@@ -284,6 +281,8 @@ p{
     justify-items: center;
 
     padding: 0 100vh;
+
+    margin-bottom: 10vh;
 
     /* background-color: black; */
 }
