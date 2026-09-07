@@ -40,12 +40,12 @@ footer {
             margin-bottom: 1.5rem;
         }
         .btn-primary {
-            background-color: #1d0f03;
-            border-color: #ff6f61;
+            background-color: rgb(33, 37, 41) !important;
+            border: none !important;
         }
         .btn-primary:hover {
-            background-color: #e85c50;
-            border-color: #e85c50;
+            background-color: #f13a3a !important;
+            border: none !important;
         }
 
 .blog-header {

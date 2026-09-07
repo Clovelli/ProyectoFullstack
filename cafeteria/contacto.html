@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
 
@@ -92,7 +92,7 @@
                         <h3 class="card-title text-center mb-4 fuzzy-bubbles-bold">Contactanos</h3>
                         <p class="card-title text-center mb-4 fuzzy-bubbles-regular">¿Tienes alguna duda o quieres preguntar si hay mesas? Completa el siguiente formulario.</p>
 
-                        <form>
+                        <form id="formulario" novalidate>
                             <div class="mb-3">
                                 <label for="name" class="form-label">Nombre</label>
                                 <input 
@@ -122,6 +122,10 @@
                                     placeholder="Escribe tu mensaje aquí"
                                     required
                                 ></textarea>
+                            </div>
+                            <div class="text-center fuzzy-bubbles-regular" style="margin-bottom: 13px;">
+                              <p id="valnombre"></p>
+                              <p id="valcorreo"></p>
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
@@ -167,6 +171,10 @@
       </div>
     </div>
    </footer>
+
+   <!-- javaScript -->
+
+   <script src="js/contacto.js"></script>
 
 </body>
 
